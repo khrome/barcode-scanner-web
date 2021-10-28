@@ -1,0 +1,23 @@
+<html>
+    <head>
+        <title>Barcode Scanner Test Page</title>
+        <script src="dist/barcode-scanner.js"></script>
+        <script>
+            var Barcode = window.Barcode;
+            window.addEventListener('DOMContentLoaded', (event) => {
+                var scanner = new Barcode.Scanner();
+                Barcode.listen(document.body, scanner);
+                new Barcode.Scan({
+                    scanner: scanner,
+                    suffix: 'Enter',
+                    onScan : function(e){
+                        console.log('>>>>>', e);
+
+                    }
+                });
+            });
+        </script>
+    </head>
+    <body>
+    </body>
+</html>

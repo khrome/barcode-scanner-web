@@ -1,0 +1,37 @@
+{
+    "name": "barcode-scanner-web",
+    "homepage": "https://github.com/khrome/barcode-scanner-web",
+    "version": "0.0.1",
+    "main": "scanner.js",
+    "scripts": {
+        "test": " ./node_modules/mocha/bin/mocha",
+        "build": "browserify global-scanner.js -o dist/barcode-scanner.js"
+    },
+    "description": "A wedge based scanner driver suitable for command line or browser use.",
+    "keywords": [
+        "barcode",
+        "scanner",
+        "browser"
+    ],
+    "author": "Abbey Hawk Sparrow <@khrome> (http://patternweaver.com)",
+    "contributors": [],
+    "bugs": {
+        "url": "https://github.com/khrome/barcode-scanner-web/issues"
+    },
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "git://github.com/khrome/barcode-scanner-web.git"
+    },
+    "dependencies": {
+        "async-objects": "^0.1.0",
+        "character-scanner": "0.0.1"
+    },
+    "devDependencies": {
+        "mocha": "^2.5.3",
+        "should": "^10.0.0"
+    },
+    "engines": {
+        "node": "*"
+    }
+}
